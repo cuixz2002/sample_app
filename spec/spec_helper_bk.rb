@@ -13,30 +13,6 @@
 # The `.rspec` file also contains a few flags that are not defaults but that
 # users commonly want.
 #
-# Added By cui Start
-ENV["RAILS_ENV"] ||= 'test'
-require File.expand_path("../../config/environment", __FILE__)
-require 'rspec/rails'
-
-RSpec.configure do |config|
-  config.include Capybara::DSL
-  config.include Rails.application.routes.url_helpers
-
-  # rspec-rails 3 will no longer automatically infer an example group's spec type
-  # from the file location. You can explicitly opt-in to the feature using this
-  # config option.
-  # To explicitly tag specs without using automatic inference, set the `:type`
-  # metadata manually:
-  #
-  #     describe ThingsController, :type => :controller do
-  #       # Equivalent to being in spec/controllers
-  #     end
-  config.infer_spec_type_from_file_location!
-end
-#Added by Cui End
-#config.infer_spec_type_from_file_location!
-#Added by Cui End
-
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
@@ -63,7 +39,7 @@ RSpec.configure do |config|
   end
 
 # The settings below are suggested to provide a good initial experience
-# with RSpec, but feel free to customize to your heart's content.  
+# with RSpec, but feel free to customize to your heart's content.
 =begin
   # These two settings work together to allow you to limit a spec run
   # to individual examples or groups you care about by tagging them with

@@ -3,6 +3,11 @@ ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'sprockets', '2.12.3'
+gem 'transpec'
+gem 'bcrypt-ruby', '3.1.2'
+
 # Use sqlite3 as the database for Active Record
 
 group :development , :test do
@@ -11,7 +16,9 @@ group :development , :test do
 end 
 group :test do
  gem 'selenium-webdriver', '2.35.1'
- gem 'capybara', '2.1.0'
+ gem 'capybara', '2.4.4'
+ gem 'poltergeist',                 git: 'git://github.com/jonleighton/poltergeist.git' # '1.1.0'  # requires 'brew install phantomjs'
+
 end 
 
 # Use SCSS for stylesheets
