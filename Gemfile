@@ -18,7 +18,7 @@ group :test do
  gem 'selenium-webdriver', '2.35.1'
  gem 'capybara', '2.4.4'
  gem 'poltergeist',                 git: 'git://github.com/jonleighton/poltergeist.git' # '1.1.0'  # requires 'brew install phantomjs'
-
+ gem 'factory_girl_rails', '4.2.1'
 end 
 
 # Use SCSS for stylesheets
